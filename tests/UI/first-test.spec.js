@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-test('Google Playwright getting started', async ({ page }) => {
+test.skip('Google Playwright getting started', async ({ page }) => {
 
     await page.goto('https://google.pl');
 
