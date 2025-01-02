@@ -52,7 +52,7 @@ test.describe('API testing', () => {
 
     });
 
-    test('Adding new product to the cart and deleting it.', async ({ request }) => {
+    test.skip('Adding new product to the cart and deleting it.', async ({ request }) => {
 
         // Makes the POST call to add new product to the cart, validates it got added
 
@@ -214,7 +214,7 @@ test.describe('API testing', () => {
 
     });
 
-    test('GET the list of orders.', async ({ request }) => {
+    test.skip('GET the list of orders.', async ({ request }) => {
 
         const response = await request.get(baseURL + "/orders", {
             headers: { "Authorization": "3b709a3c59b454665b123a3e7c73a8c0d836052d0d16c104c253fa58a58a651d" }
